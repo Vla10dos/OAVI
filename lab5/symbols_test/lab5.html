@@ -1,0 +1,566 @@
+<h2
+id="лабораторная-работа-5.-выделение-признаков-символов">Лабораторная
+работа №5. Выделение признаков символов</h2>
+<h2 id="греческие-заглавные-буквы">Греческие заглавные буквы</h2>
+<p><img src="char_65.png" /></p>
+<p><img src="char_914.png" /></p>
+<p><img src="char_915.png" /></p>
+<p><img src="char_916.png" /></p>
+<p><img src="char_917.png" /></p>
+<p><img src="char_918.png" /></p>
+<p><img src="char_919.png" /></p>
+<p><img src="char_920.png" /></p>
+<p><img src="char_921.png" /></p>
+<p><img src="char_922.png" /></p>
+<p><img src="char_923.png" /></p>
+<p><img src="char_924.png" /></p>
+<p><img src="char_925.png" /></p>
+<p><img src="char_926.png" /></p>
+<p><img src="char_927.png" /></p>
+<p><img src="char_928.png" /></p>
+<p><img src="char_929.png" /></p>
+<p><img src="char_930.png" /></p>
+<p><img src="char_931.png" /></p>
+<p><img src="char_932.png" /></p>
+<p><img src="char_933.png" /></p>
+<p><img src="char_934.png" /></p>
+<p><img src="char_935.png" /></p>
+<p><img src="char_936.png" /></p>
+<p><img src="char_937.png" /></p>
+<h2 id="горизонтальные-профили">Горизонтальные профили</h2>
+<p><img src="profile_horizontal_A.png" /> <img
+src="profile_horizontal_Β.png" /> <img src="profile_horizontal_Γ.png" />
+<img src="profile_horizontal_Δ.png" /> <img
+src="profile_horizontal_Ε.png" /> <img src="profile_horizontal_Ζ.png" />
+<img src="profile_horizontal_Η.png" /> <img
+src="profile_horizontal_Θ.png" /> <img src="profile_horizontal_Ι.png" />
+<img src="profile_horizontal_Κ.png" /> <img
+src="profile_horizontal_Λ.png" /> <img src="profile_horizontal_Μ.png" />
+<img src="profile_horizontal_Ν.png" /> <img
+src="profile_horizontal_Ξ.png" /> <img src="profile_horizontal_Ο.png" />
+<img src="profile_horizontal_Π.png" /> <img
+src="profile_horizontal_Ρ.png" /> <img src="profile_horizontal_Σ.png" />
+<img src="profile_horizontal_Τ.png" /> <img
+src="profile_horizontal_Υ.png" /> <img src="profile_horizontal_Φ.png" />
+<img src="profile_horizontal_Χ.png" /> <img
+src="profile_horizontal_Ψ.png" /> <img
+src="profile_horizontal_Ω.png" /></p>
+<h2 id="вертикальные-профили">Вертикальные профили</h2>
+<p><img src="profile_vertical_A.png" /> <img
+src="profile_vertical_Β.png" /> <img src="profile_vertical_Γ.png" />
+<img src="profile_vertical_Δ.png" /> <img
+src="profile_vertical_Ε.png" /> <img src="profile_vertical_Ζ.png" />
+<img src="profile_vertical_Η.png" /> <img
+src="profile_vertical_Θ.png" /> <img src="profile_vertical_Ι.png" />
+<img src="profile_vertical_Κ.png" /> <img
+src="profile_vertical_Λ.png" /> <img src="profile_vertical_Μ.png" />
+<img src="profile_vertical_Ν.png" /> <img
+src="profile_vertical_Ξ.png" /> <img src="profile_vertical_Ο.png" />
+<img src="profile_vertical_Π.png" /> <img
+src="profile_vertical_Ρ.png" /> <img src="profile_vertical_Σ.png" />
+<img src="profile_vertical_Τ.png" /> <img
+src="profile_vertical_Υ.png" /> <img src="profile_vertical_Φ.png" />
+<img src="profile_vertical_Χ.png" /> <img
+src="profile_vertical_Ψ.png" /> <img src="profile_vertical_Ω.png" /></p>
+<h2 id="набор-признаков">Набор признаков</h2>
+<p><code>features.csv</code></p>
+<table>
+<colgroup>
+<col style="width: 3%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+<col style="width: 7%" />
+<col style="width: 7%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 2%" />
+<col style="width: 2%" />
+<col style="width: 5%" />
+<col style="width: 5%" />
+</colgroup>
+<thead>
+<tr>
+<th style="text-align: center;">har</th>
+<th style="text-align: center;">q1_abs</th>
+<th style="text-align: center;">q2_abs</th>
+<th style="text-align: center;">q3_abs</th>
+<th style="text-align: center;">q4_abs</th>
+<th style="text-align: center;">q1_rel</th>
+<th style="text-align: center;">q2_rel</th>
+<th style="text-align: center;">q3_rel</th>
+<th style="text-align: center;">q4_rel</th>
+<th style="text-align: center;">center_x</th>
+<th style="text-align: center;">center_y</th>
+<th style="text-align: center;">center_x_rel</th>
+<th style="text-align: center;">center_y_rel</th>
+<th style="text-align: center;">ix</th>
+<th style="text-align: center;">iy</th>
+<th style="text-align: center;">ix_rel</th>
+<th style="text-align: center;">iy_rel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Α</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">69</td>
+<td style="text-align: center;">154</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.0149</td>
+<td style="text-align: center;">0.0491</td>
+<td style="text-align: center;">0.1095</td>
+<td style="text-align: center;">38.11</td>
+<td style="text-align: center;">52.23</td>
+<td style="text-align: center;">0.5015</td>
+<td style="text-align: center;">0.6831</td>
+<td style="text-align: center;">23767.68</td>
+<td style="text-align: center;">12184.01</td>
+<td style="text-align: center;">0.000732</td>
+<td style="text-align: center;">0.000375</td>
+</tr>
+<tr>
+<td style="text-align: center;">Β</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">151</td>
+<td style="text-align: center;">0.0197</td>
+<td style="text-align: center;">0.019</td>
+<td style="text-align: center;">0.1081</td>
+<td style="text-align: center;">0.1103</td>
+<td style="text-align: center;">36.72</td>
+<td style="text-align: center;">49.4</td>
+<td style="text-align: center;">0.4893</td>
+<td style="text-align: center;">0.654</td>
+<td style="text-align: center;">39160.32</td>
+<td style="text-align: center;">21753.16</td>
+<td style="text-align: center;">0.001271</td>
+<td style="text-align: center;">0.000706</td>
+</tr>
+<tr>
+<td style="text-align: center;">Γ</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">0.0125</td>
+<td style="text-align: center;">0.0263</td>
+<td style="text-align: center;">0.1025</td>
+<td style="text-align: center;">0.0145</td>
+<td style="text-align: center;">33.85</td>
+<td style="text-align: center;">48.24</td>
+<td style="text-align: center;">0.4323</td>
+<td style="text-align: center;">0.6216</td>
+<td style="text-align: center;">29761.04</td>
+<td style="text-align: center;">20842.16</td>
+<td style="text-align: center;">0.000847</td>
+<td style="text-align: center;">0.000593</td>
+</tr>
+<tr>
+<td style="text-align: center;">Δ</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">154</td>
+<td style="text-align: center;">142</td>
+<td style="text-align: center;">0.0223</td>
+<td style="text-align: center;">0.0155</td>
+<td style="text-align: center;">0.1041</td>
+<td style="text-align: center;">0.0959</td>
+<td style="text-align: center;">39.37</td>
+<td style="text-align: center;">49.24</td>
+<td style="text-align: center;">0.4857</td>
+<td style="text-align: center;">0.6519</td>
+<td style="text-align: center;">39518.47</td>
+<td style="text-align: center;">42900.25</td>
+<td style="text-align: center;">0.001098</td>
+<td style="text-align: center;">0.001192</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ε</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">157</td>
+<td style="text-align: center;">61</td>
+<td style="text-align: center;">0.0197</td>
+<td style="text-align: center;">0.0205</td>
+<td style="text-align: center;">0.1147</td>
+<td style="text-align: center;">0.0446</td>
+<td style="text-align: center;">34.25</td>
+<td style="text-align: center;">49.86</td>
+<td style="text-align: center;">0.4493</td>
+<td style="text-align: center;">0.6603</td>
+<td style="text-align: center;">37103.99</td>
+<td style="text-align: center;">15837.06</td>
+<td style="text-align: center;">0.001173</td>
+<td style="text-align: center;">0.000501</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ζ</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">158</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">0.0213</td>
+<td style="text-align: center;">0.0206</td>
+<td style="text-align: center;">0.1124</td>
+<td style="text-align: center;">0.022</td>
+<td style="text-align: center;">33.42</td>
+<td style="text-align: center;">47.41</td>
+<td style="text-align: center;">0.4266</td>
+<td style="text-align: center;">0.6271</td>
+<td style="text-align: center;">29781.87</td>
+<td style="text-align: center;">15292.39</td>
+<td style="text-align: center;">0.000893</td>
+<td style="text-align: center;">0.000459</td>
+</tr>
+<tr>
+<td style="text-align: center;">Η</td>
+<td style="text-align: center;">21</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">103</td>
+<td style="text-align: center;">0.0142</td>
+<td style="text-align: center;">0.025</td>
+<td style="text-align: center;">0.0999</td>
+<td style="text-align: center;">0.0695</td>
+<td style="text-align: center;">37.85</td>
+<td style="text-align: center;">50.19</td>
+<td style="text-align: center;">0.4786</td>
+<td style="text-align: center;">0.6473</td>
+<td style="text-align: center;">35694.35</td>
+<td style="text-align: center;">34807.15</td>
+<td style="text-align: center;">0.00099</td>
+<td style="text-align: center;">0.000965</td>
+</tr>
+<tr>
+<td style="text-align: center;">Θ</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">173</td>
+<td style="text-align: center;">159</td>
+<td style="text-align: center;">0.0238</td>
+<td style="text-align: center;">0.0245</td>
+<td style="text-align: center;">0.1113</td>
+<td style="text-align: center;">0.1023</td>
+<td style="text-align: center;">39.86</td>
+<td style="text-align: center;">48.87</td>
+<td style="text-align: center;">0.4626</td>
+<td style="text-align: center;">0.6469</td>
+<td style="text-align: center;">48054.84</td>
+<td style="text-align: center;">45021.02</td>
+<td style="text-align: center;">0.001182</td>
+<td style="text-align: center;">0.001108</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ι</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">30</td>
+<td style="text-align: center;">120</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">0.0042</td>
+<td style="text-align: center;">0.0253</td>
+<td style="text-align: center;">0.1014</td>
+<td style="text-align: center;">0.0245</td>
+<td style="text-align: center;">29.72</td>
+<td style="text-align: center;">49.18</td>
+<td style="text-align: center;">0.4558</td>
+<td style="text-align: center;">0.6511</td>
+<td style="text-align: center;">23649.72</td>
+<td style="text-align: center;">2505.3</td>
+<td style="text-align: center;">0.001026</td>
+<td style="text-align: center;">0.000109</td>
+</tr>
+<tr>
+<td style="text-align: center;">Κ</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">88</td>
+<td style="text-align: center;">83</td>
+<td style="text-align: center;">0.0</td>
+<td style="text-align: center;">0.0316</td>
+<td style="text-align: center;">0.0662</td>
+<td style="text-align: center;">0.0624</td>
+<td style="text-align: center;">33.58</td>
+<td style="text-align: center;">50.46</td>
+<td style="text-align: center;">0.4655</td>
+<td style="text-align: center;">0.6595</td>
+<td style="text-align: center;">27830.91</td>
+<td style="text-align: center;">10981.81</td>
+<td style="text-align: center;">0.000956</td>
+<td style="text-align: center;">0.000377</td>
+</tr>
+<tr>
+<td style="text-align: center;">Λ</td>
+<td style="text-align: center;">36</td>
+<td style="text-align: center;">32</td>
+<td style="text-align: center;">209</td>
+<td style="text-align: center;">86</td>
+<td style="text-align: center;">0.0243</td>
+<td style="text-align: center;">0.0216</td>
+<td style="text-align: center;">0.1412</td>
+<td style="text-align: center;">0.0581</td>
+<td style="text-align: center;">35.83</td>
+<td style="text-align: center;">49.92</td>
+<td style="text-align: center;">0.4409</td>
+<td style="text-align: center;">0.6611</td>
+<td style="text-align: center;">46627.84</td>
+<td style="text-align: center;">22855.41</td>
+<td style="text-align: center;">0.001295</td>
+<td style="text-align: center;">0.000635</td>
+</tr>
+<tr>
+<td style="text-align: center;">Μ</td>
+<td style="text-align: center;">23</td>
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">153</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">0.0178</td>
+<td style="text-align: center;">0.0108</td>
+<td style="text-align: center;">0.1181</td>
+<td style="text-align: center;">0.0239</td>
+<td style="text-align: center;">31.26</td>
+<td style="text-align: center;">51.2</td>
+<td style="text-align: center;">0.4323</td>
+<td style="text-align: center;">0.6784</td>
+<td style="text-align: center;">30207.24</td>
+<td style="text-align: center;">6838.3</td>
+<td style="text-align: center;">0.001065</td>
+<td style="text-align: center;">0.000241</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ν</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">33</td>
+<td style="text-align: center;">209</td>
+<td style="text-align: center;">188</td>
+<td style="text-align: center;">0.0186</td>
+<td style="text-align: center;">0.0198</td>
+<td style="text-align: center;">0.1255</td>
+<td style="text-align: center;">0.1129</td>
+<td style="text-align: center;">43.68</td>
+<td style="text-align: center;">49.33</td>
+<td style="text-align: center;">0.4742</td>
+<td style="text-align: center;">0.6531</td>
+<td style="text-align: center;">49781.88</td>
+<td style="text-align: center;">65732.13</td>
+<td style="text-align: center;">0.001069</td>
+<td style="text-align: center;">0.001411</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ξ</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">139</td>
+<td style="text-align: center;">98</td>
+<td style="text-align: center;">0.0237</td>
+<td style="text-align: center;">0.0173</td>
+<td style="text-align: center;">0.0892</td>
+<td style="text-align: center;">0.0629</td>
+<td style="text-align: center;">38.43</td>
+<td style="text-align: center;">48.04</td>
+<td style="text-align: center;">0.4621</td>
+<td style="text-align: center;">0.6272</td>
+<td style="text-align: center;">33158.44</td>
+<td style="text-align: center;">23835.85</td>
+<td style="text-align: center;">0.000854</td>
+<td style="text-align: center;">0.000614</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ο</td>
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">38</td>
+<td style="text-align: center;">152</td>
+<td style="text-align: center;">140</td>
+<td style="text-align: center;">0.0121</td>
+<td style="text-align: center;">0.0256</td>
+<td style="text-align: center;">0.1026</td>
+<td style="text-align: center;">0.0945</td>
+<td style="text-align: center;">39.67</td>
+<td style="text-align: center;">49.19</td>
+<td style="text-align: center;">0.5022</td>
+<td style="text-align: center;">0.634</td>
+<td style="text-align: center;">35822.86</td>
+<td style="text-align: center;">48010.66</td>
+<td style="text-align: center;">0.000993</td>
+<td style="text-align: center;">0.001331</td>
+</tr>
+<tr>
+<td style="text-align: center;">Π</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">155</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">0.0205</td>
+<td style="text-align: center;">0.0197</td>
+<td style="text-align: center;">0.1132</td>
+<td style="text-align: center;">0.0475</td>
+<td style="text-align: center;">35.16</td>
+<td style="text-align: center;">46.68</td>
+<td style="text-align: center;">0.4616</td>
+<td style="text-align: center;">0.6173</td>
+<td style="text-align: center;">29923.84</td>
+<td style="text-align: center;">20656.96</td>
+<td style="text-align: center;">0.000946</td>
+<td style="text-align: center;">0.000653</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ρ</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">194</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">0.0233</td>
+<td style="text-align: center;">0.0358</td>
+<td style="text-align: center;">0.1157</td>
+<td style="text-align: center;">0.0883</td>
+<td style="text-align: center;">38.73</td>
+<td style="text-align: center;">54.88</td>
+<td style="text-align: center;">0.4901</td>
+<td style="text-align: center;">0.6265</td>
+<td style="text-align: center;">82282.14</td>
+<td style="text-align: center;">54171.96</td>
+<td style="text-align: center;">0.001787</td>
+<td style="text-align: center;">0.001176</td>
+</tr>
+<tr>
+<td style="text-align: center;">Σ</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">27</td>
+<td style="text-align: center;">152</td>
+<td style="text-align: center;">148</td>
+<td style="text-align: center;">0.0226</td>
+<td style="text-align: center;">0.0197</td>
+<td style="text-align: center;">0.111</td>
+<td style="text-align: center;">0.1081</td>
+<td style="text-align: center;">36.06</td>
+<td style="text-align: center;">49.27</td>
+<td style="text-align: center;">0.4802</td>
+<td style="text-align: center;">0.6523</td>
+<td style="text-align: center;">41532.26</td>
+<td style="text-align: center;">20560.88</td>
+<td style="text-align: center;">0.001348</td>
+<td style="text-align: center;">0.000668</td>
+</tr>
+<tr>
+<td style="text-align: center;">Τ</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">31</td>
+<td style="text-align: center;">92</td>
+<td style="text-align: center;">110</td>
+<td style="text-align: center;">0.017</td>
+<td style="text-align: center;">0.024</td>
+<td style="text-align: center;">0.0712</td>
+<td style="text-align: center;">0.0851</td>
+<td style="text-align: center;">34.28</td>
+<td style="text-align: center;">49.16</td>
+<td style="text-align: center;">0.4894</td>
+<td style="text-align: center;">0.6337</td>
+<td style="text-align: center;">31737.08</td>
+<td style="text-align: center;">11279.23</td>
+<td style="text-align: center;">0.001124</td>
+<td style="text-align: center;">0.0004</td>
+</tr>
+<tr>
+<td style="text-align: center;">Υ</td>
+<td style="text-align: center;">22</td>
+<td style="text-align: center;">46</td>
+<td style="text-align: center;">122</td>
+<td style="text-align: center;">39</td>
+<td style="text-align: center;">0.0161</td>
+<td style="text-align: center;">0.0336</td>
+<td style="text-align: center;">0.0891</td>
+<td style="text-align: center;">0.0285</td>
+<td style="text-align: center;">35.85</td>
+<td style="text-align: center;">46.59</td>
+<td style="text-align: center;">0.4774</td>
+<td style="text-align: center;">0.6161</td>
+<td style="text-align: center;">31929.23</td>
+<td style="text-align: center;">9447.65</td>
+<td style="text-align: center;">0.001037</td>
+<td style="text-align: center;">0.000307</td>
+</tr>
+<tr>
+<td style="text-align: center;">Φ</td>
+<td style="text-align: center;">42</td>
+<td style="text-align: center;">25</td>
+<td style="text-align: center;">133</td>
+<td style="text-align: center;">56</td>
+<td style="text-align: center;">0.027</td>
+<td style="text-align: center;">0.016</td>
+<td style="text-align: center;">0.0854</td>
+<td style="text-align: center;">0.0359</td>
+<td style="text-align: center;">37.4</td>
+<td style="text-align: center;">47.35</td>
+<td style="text-align: center;">0.4439</td>
+<td style="text-align: center;">0.618</td>
+<td style="text-align: center;">31770.36</td>
+<td style="text-align: center;">28451.36</td>
+<td style="text-align: center;">0.000798</td>
+<td style="text-align: center;">0.000715</td>
+</tr>
+<tr>
+<td style="text-align: center;">Χ</td>
+<td style="text-align: center;">37</td>
+<td style="text-align: center;">29</td>
+<td style="text-align: center;">137</td>
+<td style="text-align: center;">26</td>
+<td style="text-align: center;">0.025</td>
+<td style="text-align: center;">0.0196</td>
+<td style="text-align: center;">0.0924</td>
+<td style="text-align: center;">0.0175</td>
+<td style="text-align: center;">35.55</td>
+<td style="text-align: center;">45.83</td>
+<td style="text-align: center;">0.4488</td>
+<td style="text-align: center;">0.5977</td>
+<td style="text-align: center;">23913.01</td>
+<td style="text-align: center;">12328.57</td>
+<td style="text-align: center;">0.00068</td>
+<td style="text-align: center;">0.000351</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ψ</td>
+<td style="text-align: center;">45</td>
+<td style="text-align: center;">65</td>
+<td style="text-align: center;">191</td>
+<td style="text-align: center;">134</td>
+<td style="text-align: center;">0.0263</td>
+<td style="text-align: center;">0.038</td>
+<td style="text-align: center;">0.1117</td>
+<td style="text-align: center;">0.0784</td>
+<td style="text-align: center;">41.56</td>
+<td style="text-align: center;">46.37</td>
+<td style="text-align: center;">0.4557</td>
+<td style="text-align: center;">0.6049</td>
+<td style="text-align: center;">42877.15</td>
+<td style="text-align: center;">44835.37</td>
+<td style="text-align: center;">0.000916</td>
+<td style="text-align: center;">0.000958</td>
+</tr>
+<tr>
+<td style="text-align: center;">Ω</td>
+<td style="text-align: center;">35</td>
+<td style="text-align: center;">28</td>
+<td style="text-align: center;">167</td>
+<td style="text-align: center;">60</td>
+<td style="text-align: center;">0.0231</td>
+<td style="text-align: center;">0.0185</td>
+<td style="text-align: center;">0.1101</td>
+<td style="text-align: center;">0.0396</td>
+<td style="text-align: center;">37.55</td>
+<td style="text-align: center;">48.93</td>
+<td style="text-align: center;">0.4458</td>
+<td style="text-align: center;">0.6478</td>
+<td style="text-align: center;">39937.76</td>
+<td style="text-align: center;">16855.72</td>
+<td style="text-align: center;">0.001031</td>
+<td style="text-align: center;">0.000435</td>
+</tr>
+</tbody>
+</table>
