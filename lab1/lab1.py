@@ -5,6 +5,7 @@ import cv2
 def load_image(image_path):
     return cv2.imread(image_path, cv2.IMREAD_COLOR)
 
+#проверка для actions
 
 def save_image(image, filename):
     cv2.imwrite(filename, image)
