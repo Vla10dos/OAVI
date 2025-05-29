@@ -76,11 +76,11 @@ image = load_image(image_path)
 
 split_rgb(image)
 
-rgb_to_hsi(image)
+rgb_to_hsiiii(image)
 
 invert_intensity(image)
 
-save_imageeeee(nearest_neighbor_resize(image, 2), "Interpolation.png")
+save_image(nearest_neighbor_resize(image, 2), "Interpolation.png")
 
 save_image(downsample(image, 3), "Decimation.png")
 
