@@ -78,7 +78,7 @@ split_rgbiii(image)
 
 rgb_to_hsiiii(image)
 
-invert_intensity(image)
+invert_intensityrrr(image)
 
 save_image(nearest_neighbor_resize(image, 2), "Interpolation.png")
 
