@@ -8,7 +8,7 @@ def load_image(image_path):
 #проверка для actions
 # test test test
 
-#checking endpoint
+#checking endpoint101010101001010
 
 def save_image(image, filename):
     cv2.imwrite(filename, image)
