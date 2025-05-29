@@ -74,13 +74,13 @@ def resample_one_pass(image, K):
 image_path = "image.png"
 image = load_image(image_path)
 
-split_rgbiii(image)
+split_rgb(image)
 
-rgb_to_hsiiii(image)
+rgb_to_hsi(image)
 
-invert_intensityrrr(image)
+invert_intensity(image)
 
-save_image(nearest_neighbor_resize(image, 2), "Interpolation.png")
+save_imageeeee(nearest_neighbor_resize(image, 2), "Interpolation.png")
 
 save_image(downsample(image, 3), "Decimation.png")
 
