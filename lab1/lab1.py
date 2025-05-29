@@ -10,6 +10,11 @@ def load_image(image_path):
 
 #checking endpoint101010101001010
 
+
+
+
+#арбуз
+
 def save_image(image, filename):
     cv2.imwrite(filename, image)
 
