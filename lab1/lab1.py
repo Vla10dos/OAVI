@@ -76,7 +76,7 @@ image = load_image(image_path)
 
 split_rgbiii(image)
 
-rgb_to_hsi(image)
+rgb_to_hsiiii(image)
 
 invert_intensity(image)
 
