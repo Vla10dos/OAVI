@@ -76,9 +76,9 @@ image = load_image(image_path)
 
 split_rgb(image)
 
-rgb_to_hsi(image)
+rgb_to_hsiii(image)
 
-invert_intenффsity(image)
+invert_intensity(image)
 
 save_image(nearest_neighbor_resize(image, 2), "Interpolation.png")
 
