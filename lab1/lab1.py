@@ -74,9 +74,9 @@ def resample_one_pass(image, K):
 image_path = "image.png"
 image = load_image(image_path)
 
-split_rgbффф(image)
+split_rgb(image)
 
-rgb_to_hsi(image)
+rgb_to_hsфффi(image)
 
 invert_intensity(image)
 
